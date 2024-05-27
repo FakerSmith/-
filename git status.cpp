@@ -6,4 +6,5 @@
 // git log --oneline
 // git checkout 还原点
 // git reset --hard 还原点（不可逆）
+// git clone +网址
 
