@@ -1,16 +1,33 @@
 #include <stdio.h>
-#define MaxSize 20
-typedef struct ElemType
+using namespace std;
+struct ListNode
 {
-    double coefficient;
-    int exponent;/* data */
+    int value;
+    ListNode* next;
 };
 
-typedef struct SqList
-{
-    ElemType data[MaxSize];/* data */
-    int length;
-};
+ListNode* createLinkedList () {
+    ListNode* head = nullptr;
+    ListNode* current = nullptr;
+
+    for (int i = 1; i <= 5; ++i) {
+        ListNode* newNode = new ListNode;
+        newNode->value = i;
+        newNode->next =nullptr;
+
+        if (head == nullptr) {
+            head = newNode;
+            current = head;
+        } else {
+            current->next = newNode;
+            current = newNode;
+        }
+    }
+    return head;
+}
+
+
+
 
 int main(){
     return 0;
