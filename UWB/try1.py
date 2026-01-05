@@ -12,14 +12,14 @@ import json
 
 def load_cir_data(json_path):
     """从JSON文件加载CIR数据"""
-    with open(data1.json, 'r') as f:
+with open(r'C:\Users\FakerSmith\Documents\CSDocument\UWB\data1.json', 'r') as f:
         data = json.load(f)
     
     # 提取CIR数据
-    cir_data = np.array(data['CIR_DATA'])
+        cir_data = np.array(data['CIR_DATA'])
     
-    print(f"加载了 {len(cir_data)} 个CIR样本")
-    print(f"每个样本有 {cir_data.shape[1]} 个采样点")
+        print(f"加载了 {len(cir_data)} 个CIR样本")
+        print(f"每个样本有 {cir_data.shape[1]} 个采样点")
     
     return cir_data
 
