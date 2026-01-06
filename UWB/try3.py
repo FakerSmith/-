@@ -1,5 +1,3 @@
-# 安装必要的库（如果没有的话）
-# pip install torch numpy matplotlib scikit-learn
 import matplotlib.pyplot as plt
 import matplotlib
 
